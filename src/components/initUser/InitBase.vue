@@ -90,6 +90,7 @@ export default {
       const p = localStorage.getItem("femhoot-pswrd");
       if (u == this.user && p == this.pswrd) {
         localStorage.setItem("logged-femhoot", true);
+        this.$store.commit('user/setName',this.name);
         this.$emit("login");
       } else {
         this.showError = true;
