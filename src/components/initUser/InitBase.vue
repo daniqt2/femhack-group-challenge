@@ -24,12 +24,12 @@
           @userSet="setUser"
           @pswrdSet="setPassword"
         ></login>
-        <register v-else @userSet="setUser" @pswrdSet="setPassword"></register>
+        <register v-else @userSet="setUser" @pswrdSet="setPassword" @nameSet="setName"></register>
         <div class="mt-6">
           <p class="text-google-red" v-if="showError">
             Oops! Please check you username and password
           </p>
-          <button class="bg-google-green" @click="loginOrRegister">
+          <button :class="isDisbaled ? 'bg-gray-300 cursor-not-allowed' :'bg-google-green'" @click="loginOrRegister" :disabled="isDisbaled">
             {{ current === ACTIVE.LOGIN ? "Login" : "Register and login" }}
           </button>
         </div>
@@ -59,38 +59,53 @@ export default {
       ACTIVE,
       current: ACTIVE.LOGIN,
       user: null,
+      name:null,
       pswrd: null,
       showError: false
     };
+  },
+  computed: {
+    isDisbaled(){
+      if (this.current === ACTIVE.LOGIN){
+        return !this.user || !this.pswrd
+      }
+      else {
+        return !this.user || !this.pswrd || !this.name
+      }
+    }
   },
   methods: {
     changeCurrent(val) {
       this.current = val;
     },
     loginOrRegister() {
-      if (this.user && this.pswrd) {
+      if (!this.isDisbaled) {
         if (this.current === ACTIVE.LOGIN) this.loginUser();
         else this.registerUser();
       }
     },
     loginUser() {
       this.error = false;
-      const u = localStorage.getItem("userName-femhack");
-      const p = localStorage.getItem("paswrd-femhack");
+      const u = localStorage.getItem("femhoot-username");
+      const p = localStorage.getItem("femhoot-pswrd");
       if (u == this.user && p == this.pswrd) {
-        localStorage.setItem("logged-femhack", true);
+        localStorage.setItem("logged-femhoot", true);
         this.$emit("login");
       } else {
         this.showError = true;
       }
     },
     registerUser() {
-      localStorage.setItem("userName-femhack", this.user);
-      localStorage.setItem("paswrd-femhack", this.pswrd);
+      localStorage.setItem("femhoot-username", this.user);
+      localStorage.setItem("femhoot-pswrd", this.pswrd);
+      localStorage.setItem("femhoot-name", this.name);
       this.current = ACTIVE.LOGIN;
     },
     setUser(username) {
       this.user = username;
+    },
+    setName(name) {
+      this.name = name;
     },
     setPassword(password) {
       this.pswrd = password;

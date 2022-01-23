@@ -1,0 +1,124 @@
+{
+    "info": {
+        "0": {
+            "id":"0",
+            "name": "Ada Lovelace",
+            "info": "She is referred to as the first programmer because she had written notes that explained how the notion of a specific engine could transition calculation to computation.",
+            "question" : "Who is considered as the first programmer",
+            "options": [
+               {"id":0, "text":"Whitney Wolfe Herd" , "correct": false},
+               {"id":1, "text":"Ada Lovelace" , "correct": true},
+               {"id":2, "text":"Reshma Saujani" , "correct": false},
+               {"id":3, "text":"Kate Crawford" , "correct": false}
+            ]
+        },
+        "1": {
+            "id":"1",
+            "name": "Grace Hopper",
+            "info": "She was born in New York and attended Yale University in 1930 and eventually received a PH. D in mathematics. In 1943 she joined the Naval Reserve and retired in 1966. She During the years as a Naval Reserve, Grace joined the Eckert-Mauchly Computer Corp in 1949 where she designed a compiler which translated programmer’s instructions into computer codes.",
+            "question" : "Naval new yorker that designed a compiler which translated programmer’s instructions into computer codes.",
+            "options": [
+               {"id":0, "text":"Kimberly Bryant" , "correct": false},
+               {"id":1, "text":"Ada Lovelace" , "correct":false},
+               {"id":2, "text":"Whitney Wolfe Herd" , "correct": false},
+               {"id":3, "text":"Grace Hopper" , "correct": true}
+            ]
+        },
+        "2": {
+            "id":"2",
+            "info": "She was one of four African Americans who developed and implemented code which led to the development of the battery’s used in hybrid cars. ",
+            "name":"Annie Easley",
+            "question" : "African American that helped on implementing code that led into the development of the battery’s used in hybrid cars",
+            "options": [
+               {"id":0, "text":"Grace Hopper" , "correct": false},
+               {"id":1, "text":"Whitney Wolfe Herd" , "correct": false},
+               {"id":2, "text":"Annie Easley" , "correct": true},
+               {"id":3, "text":"Reshma Saujani" , "correct": false}
+            ]
+        },
+        "3": {
+            "id":"3",
+            "info": "She started Black Girls Code in 2011, which is a is a not-for-profit organization that focuses on providing technology education for African-American girls. ",
+            "name":"Kimberly Bryant",
+            "question" : "Founder and CEO of Black Girls Code",
+            "options": [
+               {"id":0, "text":"Kimberly Bryant" , "correct": true},
+               {"id":1, "text":"Joy Buolamwini" , "correct": false},
+               {"id":2, "text":"Grace Hopper" , "correct": false},
+               {"id":3, "text":"Radia Perlman" , "correct": false}
+            ]
+        },
+        "4": {
+            "id":"4",
+            "info": "She is an Australian author and thought leader on the social impacts of AI and machine learning. Crawford helped pioneer the AI Now Institute, a research institute at NYU, and serves as a senior researcher at Microsoft",
+            "name":"Kate Crawford",
+            "question" : "Australian author focused on AI",
+            "options": [
+               {"id":0, "text":"Kate Crawford" , "correct": true},
+               {"id":1, "text":"Avril Haines" , "correct": false},
+               {"id":2, "text":"Annie Easley" , "correct": false},
+               {"id":3, "text":"Joy Buolamwini" , "correct": false}
+            ]
+        },
+        "5": {
+            "id":"5",
+            "info": "Wolfe Herd recently became the world’s youngest self-made female billionaire when Bumble IPOed.Before Bumble, she was the VP of marketing at Tinder, but left the company after she was sexually harassed and discriminated against. Now, she leads Bumble, a dating app where 100 million women have signed up to make the first move.",
+            "name":"Whitney Wolfe Herd",
+            "question" : "World’s youngest self-made female billionaire. (Bumble's CEO)",
+            "options": [
+               {"id":0, "text":"Kate Crawford" , "correct": false},
+               {"id":1, "text":"Joy Buolamwini" , "correct": false},
+               {"id":2, "text":"Whitney Wolfe Herd" , "correct": true},
+               {"id":3, "text":"Kimberly Bryant" , "correct": false}
+            ]
+        },
+        "6": {
+            "id":"6",
+            "info": "Recently appointed the nation’s top intelligence official, Haines is the first woman in US history to lead the US Intelligence Community.",
+            "name":"Avril Haines",
+            "question" : "First woman in US history to lead the US Intelligence Community.",
+            "options": [
+               {"id":0, "text":"Joy Buolamwini" , "correct": false},
+               {"id":1, "text":"Grace Hopper" , "correct": false},
+               {"id":2, "text":"Radia Perlman" , "correct": false},
+               {"id":3, "text":"Avril Haines" , "correct": true}
+            ]
+        },
+        "7": {
+            "id":"7",
+            "info": "She is nicknamed as “Mother of the Internet”, Radia’s invention of the algorithm behind the Spanning Tree Protocol (STP), was instrumental in making today's internet possible. Her work made a huge impact on the way networks self-organize and move data, and put the basic rules of internet traffic in place. ",
+            "name":"Radia Perlman",
+            "question" : "Nicknamed as “Mother of the Internet”",
+            "options": [
+               {"id":0, "text":"Radia Perlman" , "correct": true},
+               {"id":1, "text":"Whitney Wolfe Herd" , "correct": false},
+               {"id":2, "text":"Kimberly Bryant" , "correct": false},
+               {"id":3, "text":"Joy Buolamwini" , "correct": false}
+            ]
+        },
+        "8": {
+            "id":"8",
+            "info": "She’s only 31 now, and in 2019 she appeared on Forbes list of 30 Under 30 for Enterprise Technology. She identifies her life mission as battling bias in machine learning, which she identifies as a coded gaze. She is also the coauthor of  Gender Shades: Intersectional Accuracy Disparities in Commercial Gender Classification, a landmark paper that demonstrated facial recognition was fairly accurate for white men but much less so for women or people of color",
+            "name":"Joy Buolamwini",
+            "question" : "She identifies her life mission as battling bias in machine learning",
+            "options": [
+               {"id":0, "text":"Avril Haines" , "correct": false},
+               {"id":1, "text":"Joy Buolamwini" , "correct": true},
+               {"id":2, "text":"Ada Lovelace" , "correct": false},
+               {"id":3, "text":"" , "correct": false}
+            ]
+        },
+        "9": {
+            "id":"9",
+            "info": "She is the author of Women Who Don't Wait in Line: Break the Mold, Lead the Way, the New York Times bestseller, Girls Who Code: Learn to Code and Change the World. She is also the Founder/CEO of Girls Who Code, a national non-profit organization devoted to closing the gender gap in technology by challenging stereotypes about programmers.",
+            "name":"Reshma Saujani",
+            "question" : "Founder/CEO of Girls Who Code",
+            "options": [
+               {"id":0, "text":"Joy Buolamwini" , "correct": false},
+               {"id":1, "text":"Reshma Saujani" , "correct": true},
+               {"id":2, "text":"Ada Lovelace" , "correct": false},
+               {"id":3, "text":"Avril Haines" , "correct": false}
+            ]
+        }
+    }
+}

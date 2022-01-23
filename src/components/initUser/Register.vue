@@ -1,8 +1,12 @@
 <template>
   <div>
     <div class="field">
-      <p>Username</p>
+      <p>Email</p>
       <input @input="emitUsername" v-model="user" />
+    </div>
+    <div class="field">
+      <p>Name</p>
+      <input @input="emitName" v-model="name" />
     </div>
     <div class="field">
       <p>Password</p>
@@ -22,6 +26,7 @@ export default {
   data() {
     return {
       user: null,
+      name: null,
       pswrd: null,
       firstPswrd: null,
       passwordError: null
@@ -37,6 +42,9 @@ export default {
   methods: {
     emitUsername() {
       this.$emit("userSet", this.user);
+    },
+    emitName() {
+      this.$emit("nameSet", this.name);
     },
     emitPassword() {
       if (this.samePassword) this.$emit("pswrdSet", this.pswrd);

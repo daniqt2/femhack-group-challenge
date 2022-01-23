@@ -1,6 +1,7 @@
 export class StoreState {
-  username = null;
-  password = null;
+  userName = null;
+  points = 0;
+  tests = 0;
 }
 
 export default {
@@ -11,6 +12,14 @@ export default {
   actions: {
     testing() {}
   },
-  mutations: {},
+  mutations: {
+    setName(state,name){
+      state.userName = name;
+    },
+    addPoints(state,points){
+      state.points += points;
+      state.tests += 1;
+    }
+  },
   getters: {}
 };

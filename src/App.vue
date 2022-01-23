@@ -17,8 +17,11 @@ export default {
     };
   },
   mounted() {
-    const localLogged = localStorage.getItem("logged-femhack");
-    if (localLogged) this.logged = localLogged;
+    const localLogged = localStorage.getItem("logged-femhoot");
+    if (localLogged) {
+      const name = localStorage.getItem("femhoot-name");
+      this.$store.commit('user/setName',name);
+      this.logged = localLogged;}
   }
 };
 </script>

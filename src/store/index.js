@@ -1,10 +1,10 @@
 import { createStore } from "vuex";
 import UserModule from "./modules/user";
-import NotesModule from "./modules/notes";
+import infoModule from "./modules/info";
 
 export default createStore({
   modules: {
     user: UserModule,
-    notes: NotesModule
+    info: infoModule
   }
 });
