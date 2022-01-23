@@ -14,11 +14,11 @@ App done using Vue + Vite and Tailwind
 Login and Registration is done using the help of localstorage to imitate a real functionality
 
 # Build : 
-npm run build
+- npm run build
 
 # Run : 
-npm i
-npm run dev
+- npm i
+- npm run dev
 
 
 # By Daniela Quesada danshca@gmail.com
