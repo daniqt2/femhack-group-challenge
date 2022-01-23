@@ -2,7 +2,7 @@
   <div class="p-4 md:p-32">
       <span v-if="index < profiles.length-1">
          <div class="text-left">
-              <button  class="bg-google-blue" @click="finishTest">Escape test</button>
+              <button  class="bg-google-blue" @click="$emit('finish-test')">Escape test</button>
          </div>
           <card class="md:w-6/12" :text="profiles[index].question" :isTest="true"></card>
         <div v-if="optionPicked" class="md:w-5/12 mx-auto rounded-lg py-10 font-bold text-xl text-white my-10" :class="correctAnswer.id == optionPicked.id ? 'bg-google-green':'bg-google-red'">
@@ -38,7 +38,11 @@ export default {
     computed: {
         ...mapState('info',['info']),
         profiles(){
-            return Object.values(this.info)
+            const unShuffled = Object.values(this.info);
+      return unShuffled
+        .map((value) => ({ value, sort: Math.random() }))
+        .sort((a, b) => a.sort - b.sort)
+        .map(({ value }) => value);
         },
         isDisabled(){
             if (!this.test) return false
